@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+	    <meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="formulaire CV.css">
+	</head>
+	<body>
+	    <header>
+		    <br>
+		    <center><h1 id="h1">Formulaire des données CV:</h1></center>
+		</header>
+		<main>
+		    <br>
+			<form action= "https://httpbin.org/get" method="get">
+		    <p> 
+			    <label><strong>Date d'enregistrement:</strong></label>
+				<input type="number" placeholder="jj" min="1" max="31" name="jourEngr"  required>&nbsp;/&nbsp;
+				<input type="number" placeholder="mm" min="1" max="12" name="MoisEngr" required>&nbsp;/&nbsp;2020
+		    </p>
+			<p><strong>Titre de CV:</strong>
+			<input type="text" id="titre" value="." name="titre"></p>
+			<br>
+			<fieldset>
+			    <legend><strong>Informations personnelles:</strong></legend>
+				<p><strong>Sex:</strong>
+				<p><input type="radio" name="sex">
+				<label>M</label></p>
+				<p><input type="radio" name="sex">
+				<label>F</label></p></p>
+				<p><strong>Nom:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="Nom"  name="Nom"  value="." required></p>
+				<p><strong>Prénom: </strong>&nbsp;&nbsp;
+				<input type="text" id="Prenom" name="Prenom" value="." required></p>
+				<p><strong>Age:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="number" id="Age"  name="Age" required></p>
+				<p><strong>NumCIN:</strong>
+				<input type="text" name="NumCIN" required></p>
+				<p><strong>Tel:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" name="Tel"required></p>
+				<p><strong>Email:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" id="Email" name="Email" value="example@gmail.com" required></p>
+				<p><strong>Adresse:</strong>&nbsp;
+				<input type="text" value="." id="Adresse">
+				</p>
+			</fieldset>
+			<br><br><br>
+			<fieldset>
+			    <legend><strong>Diplomes:</strong></legend>
+				<p>saisisez au moins un(diplome 1 est exigé):</p>
+				<p><strong>Diplome 1:</strong>
+				<label>Nom:</label>
+				<input type="text" name="NomDip1" required>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>Ecole:</label>
+                <input type="text" name="EcoleDip1"  required>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                <label>Pays:</label>
+                <input type="text" name="PaysDip1"  required>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<label>Année:</label>
+				<input type="number" name="AnnéeDip1" min="2000" max="2020" required></p>
+
+				
+				<p><strong>Diplome 2:</strong>
+				<label>Nom:</label>
+				<input type="text" name="NomDip2">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>Ecole:</label>
+                <input type="text" name="EcoleDip2">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                <label>Pays:</label>
+                <input type="text" name="PaysDip2">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<label>Année:</label>
+				<input type="number" min="2000" max="2020" name="AnnéeDip2"></p>
+				
+				
+				<p><strong>Diplome 3:</strong>
+				<label>Nom:</label>
+				<input type="text" name="NomDip3">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>Ecole:</label>
+                <input type="text" name="EcoleDip3">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                <label>Pays:</label>
+                <input type="text" name="PaysDip3">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<label>Année:</label>
+				<input type="number" min="2000" max="2020" name="AnnéeDip3"></p>
+			</fieldset>
+			<br><br><br>
+			<fieldset>
+			    <legend><strong>Section </strong></legend>
+				<p>saisisez au moins un(titre 1 est exigé):</p>
+				<p><strong>section1:</strong>
+				<label>titre section:</label>
+				<input type="text" id="titre_sec1" required>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>contenu:</label>
+                <input type="text" id="contenu1"  required>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                
+				
+				<p><strong>section2:</strong>
+				<label>titre section:</label>
+				<input type="text" id="titre_sec2">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>contenu</label>
+                <input type="text" id="contenu2">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                
+				<p><strong>section3:</strong>
+				<label>titre section:</label>
+				<input type="text" id="titre_sec3">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <label>contenu</label>
+                <input type="text" id="contenu3">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;		
+                
+				
+				
+                
+			</fieldset>
+			<br><br><br>
+			<fieldset>
+			    <legend><strong>Lettre de motivation:</strong></legend>
+			    <p>saisissez ta lettre de motivation:</p>
+				<textarea id="textarea" rows="10" cols="100" placeholder="lettre de motivation" required="true" name="lettre de motivation"></textarea>
+			</fieldset>
+			<br>
+			<fieldset>
+			<input type="submit" id="b1" value="Envoyer"><br><br>
+			<input type="reset"id="b2" value="Réinitialiser">
+			</fieldset>
+		    </form>
+		</main>
+		<script src="formulaire.js"></script>
+		<footer>
+		    <br>
+		    <center>&copy;</center>	
+            <br>			
+		</footer>	
+	</body>
+</html>

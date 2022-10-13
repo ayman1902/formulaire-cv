@@ -1,0 +1,42 @@
+#h1
+{ 
+    width: 400px;
+    text-align: center;
+	background-color: rgb(228, 232, 169);
+    font-size: 40px;
+	border:5px double black;
+	border-radius: 10px;
+	font-family: "Gramond",sans-serif;
+	
+}
+
+header
+{
+	height: 200px;
+	background-image: url("cvimg1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main
+{
+	height: 1150;
+	background: radial-gradient(rgb(196, 212, 193),rgb(193, 212, 208),rgb(196, 212, 193));
+	
+}
+
+#b1
+{
+	background-color: #20B2AA;
+	border-radius: 10px;
+}
+
+#b2
+{
+	background-color: #20B2AA;
+	border-radius: 10px;
+}
+
+
+   
+
